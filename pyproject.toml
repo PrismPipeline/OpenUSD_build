@@ -4,4 +4,4 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "OpenUSD_build"
-version = "1.0"
+version = "22.08"
