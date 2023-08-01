@@ -1,0 +1,10 @@
+prefix=C:/Users/paperspace/USD_install/build_22.08_py39_prman_1.38.4/install
+exec_prefix=C:/Users/paperspace/USD_install/build_22.08_py39_prman_1.38.4/install
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: OpenColorIO
+Description: A color management framework for visual effects and animation
+Version: 1.1.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lOpenColorIO

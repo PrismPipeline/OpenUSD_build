@@ -1,0 +1,14 @@
+prefix=C:/Users/paperspace/USD_install/build_22.08_py39_prman_1.38.4/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: blosc
+Description: A blocking, shuffling and lossless compression library
+URL: http://blosc.org/
+Version: 1.20.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lblosc
+Cflags: -I${includedir}

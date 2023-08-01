@@ -1,0 +1,34 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Types": {
+                    "HdSt_DependencySceneIndexPlugin" : {
+                        "bases": ["HdSceneIndexPlugin"],
+                        "loadWithRenderer" : "GL",
+                        "priority": 0,
+                        "displayName": "Storm Dependency Scene Index"
+                    },
+                    "HdSt_DependencyForwardingSceneIndexPlugin" : {
+                        "bases": ["HdSceneIndexPlugin"],
+                        "loadWithRenderer" : "GL",
+                        "priority": 0,
+                        "displayName": "Storm Dependency Forwarding Scene Index"
+                    },
+                    "HdSt_ImplicitSurfaceSceneIndexPlugin" : {
+                        "bases": ["HdSceneIndexPlugin"],
+                        "loadWithRenderer" : "GL",
+                        "priority": 0,
+                        "displayName": "Scene Index to turn implicit surfaces into prims suitable for Storm"
+                    }
+                },
+                "ShaderResources": "shaders"
+            },
+            "LibraryPath": "../../usd_hdSt.dll",
+            "Name": "hdSt",
+            "ResourcePath": "resources",
+            "Root": "..",
+            "Type": "library"
+        }
+    ]
+}
