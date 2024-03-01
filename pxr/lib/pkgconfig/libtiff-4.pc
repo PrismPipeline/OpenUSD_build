@@ -1,0 +1,11 @@
+prefix=F:/Projects/Compiling/USD/build_24.03_mtlx_v1.38.9/install
+exec_prefix=F:/Projects/Compiling/USD/build_24.03_mtlx_v1.38.9/install
+libdir=F:/Projects/Compiling/USD/build_24.03_mtlx_v1.38.9/install/lib
+includedir=F:/Projects/Compiling/USD/build_24.03_mtlx_v1.38.9/install/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.0.7
+Libs: -LF:/Projects/Compiling/USD/build_24.03_mtlx_v1.38.9/install/lib -ltiff
+Libs.private: 
+Cflags: -IF:/Projects/Compiling/USD/build_24.03_mtlx_v1.38.9/install/include
