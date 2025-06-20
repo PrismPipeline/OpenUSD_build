@@ -1490,9 +1490,10 @@ class StageView(QGLWidget):
         pseudoRoot = self._dataModel.stage.GetPseudoRoot()
 
         renderer.SetSelectionColor(self._dataModel.viewSettings.highlightColor)
-        renderer.SetRendererSetting(
-            "domeLightCameraVisibility",
-            self._dataModel.viewSettings.domeLightTexturesVisible)
+        if self.GetRendererDisplayName(self.GetCurrentRendererId()) != "Arnold":
+            renderer.SetRendererSetting(
+                "domeLightCameraVisibility",
+                self._dataModel.viewSettings.domeLightTexturesVisible)
 
         self._processBBoxes()
         self._processSelection()
